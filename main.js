@@ -129,8 +129,8 @@ function updatetotal() {
         var quantity = quantityElement.value;
         total = total + price * quantity;
         //  if price contain some cents value
+    }
         total = Math.round(total *100) / 100;
 
-        document.getElementsByClassName('total-price')[0].innerText = '$' +total;
-    }
+        document.getElementsByClassName('total-price')[0].innerText = '$' + total;
 }
